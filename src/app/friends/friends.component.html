@@ -1,1 +1,43 @@
-<p>friends works!</p>
+<div class="container">
+    <div class="border">
+        <button class="btn btn-md btn-outline-primary" > 
+            <i class="fa fa-user"></i>Add Friend</button>
+    </div>
+    <table class="table table-borderes table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let friend of friends">
+                <td><span>{{friend.id}}</span></td>
+                <td><span>{{friend.firstName}}</span></td>
+                <td><span>{{friend.lastName}}</span></td>
+                <td><span>{{friend.departement}}</span></td>
+                <td><span>{{friend.email}}</span></td>
+                <td><span>{{friend.country}}</span></td>
+                <td>
+                    <button class="btn btn-sm btn-info">
+                        <i class="fa fa-search"></i>
+                        Details
+                    </button>
+                    <button class="btn btn-sm btn-warning">
+                        <i class="fa fa-edit"></i>
+                        Edit
+                    </button>
+                    <button class="btn btn-sm btn-danger">
+                        <i class="fa fa-remove"></i>
+                        remove
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

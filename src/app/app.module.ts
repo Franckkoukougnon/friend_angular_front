@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { FriendsComponent } from './friends/friends.component';
+import { HttpClientModule } from '@angular/common/http';  
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { FriendsComponent } from './friends/friends.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    
+    HttpClientModule,
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
